@@ -20,7 +20,7 @@ export const ShoppingCartProvider = ({children}) =>{
     const [storeItems, setStoreItems] = useState([])
 
     const fetchStoreItems = async () => {
-      fetch('https://ecommerc-back.herokuapp.com/store-items').then(res => {
+      fetch('https://express-api-rqvb.onrender.com/store-items').then(res => {
        if(res.ok) return res.json()
         res.json().then(json => Promise.reject(json))
       }).then((items) => setStoreItems(items))
