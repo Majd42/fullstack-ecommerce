@@ -13,7 +13,7 @@ const ShoppingCart = () => {
     
     const handlePayment =  () => {
         setIsLoading(true)
-        fetch('https://ecommerc-back.herokuapp.com/create-checkout-session',{
+        fetch('https://express-api-rqvb.onrender.com/create-checkout-session',{
             method: 'Post',
             headers: {
                 'Content-Type': 'application/json',
